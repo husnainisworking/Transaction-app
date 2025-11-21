@@ -1,0 +1,128 @@
+/* Base Layout */
+body {
+    font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
+    color: #1c1c1c;
+    margin: 0;
+    padding: 2rem;
+}
+
+/* Container */
+.container {
+    max-width: 720px;
+    margin: auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    border-top: 6px solid #2e77bb;
+}
+
+/* Headings */
+h1, h2 {
+    color: #2e77bb;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Alerts */
+.alert {
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    border-left: 5px solid #2e77bb;
+}
+
+.alert-success {
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+
+.alert-error {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+/* Form Elements */
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+form select,
+form input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease;
+}
+
+form select:focus,
+form input[type="number"]:focus {
+    border-color: #2e77bb;
+    outline: none;
+}
+
+/* Button */
+form button {
+    background-color: #2e77bb;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1a5a8a;
+}
+
+/* Transactions Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+table th {
+    background-color: #f0f4f8;
+    font-weight: 600;
+    color: #2e77bb;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
